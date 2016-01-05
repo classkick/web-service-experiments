@@ -1,0 +1,26 @@
+apply plugin: 'play'
+
+repositories {
+    jcenter()
+    maven {
+        name "typesafe-maven-release"
+        url "https://repo.typesafe.com/typesafe/maven-releases"
+    }
+    ivy {
+        name "typesafe-ivy-release"
+        url "https://repo.typesafe.com/typesafe/ivy-releases"
+        layout "ivy"
+    }
+}
+
+model {
+    components {
+        play {
+            platform play: '2.4.4', scala: '2.11'
+        }
+    }
+}
+
+dependencies {
+
+}
