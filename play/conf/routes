@@ -1,0 +1,5 @@
+
+
+GET       /test/map         new controllers.TestController.map
+GET       /test/object      new controllers.TestController.getObject
+POST      /test/object      new controllers.TestController.postObject
