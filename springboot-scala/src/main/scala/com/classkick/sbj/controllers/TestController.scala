@@ -16,7 +16,7 @@ class TestController {
 
     @Autowired private val service: TestService = null
 
-    def asCallable[T: AnyRef](f: () => T): Callable[T] = {
+    def asCallable[T](f: () => T): Callable[T] = {
         new Callable[T]() {
             def call(): T = {
                 f()
